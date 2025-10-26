@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Network Latency Analyzer</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Network Latency Analyzer</h1>
+    <input type="text" id="host" placeholder="Enter host or IP">
+    <p id="status">Enter a host and wait for live updates...</p>
+
+    <h2>Last 10 Pings</h2>
+    <table border="1" id="pingTable">
+        <thead>
+            <tr><th>Time</th><th>Host</th><th>Latency (ms)</th></tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Latency Graph</h2>
+    <canvas id="latencyChart" width="400" height="200"></canvas>
+</div>
+
+<script src="../static/script.js"></script>
+</body>
+</html>
